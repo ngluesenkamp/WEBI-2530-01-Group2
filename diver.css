@@ -1,0 +1,336 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,300italic,400italic,500,500italic,700,700italic,800,900);
+.container-divercards {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(39, 164, 197, 0.55);
+}
+nav {
+background-color: #fff;
+}
+
+.cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  background: #fefff9;
+  color: #363636;
+  text-decoration: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+ 
+}
+@media (min-width: 700px) {
+  .card {
+    max-width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+  .card:nth-child(even) {
+    margin-right: 20px;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+.card span {
+  display: block;
+}
+.card .card-summary {
+  padding: 5% 5% 3% 5%;
+}
+.card .card-header {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: overlay;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+}
+.card .card-header:hover, .card .card-header:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+.card .card-title {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3.5% 0 2.5% 0;
+  color: #338a9b;
+  font-family: 'Alegreya Sans', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card .card-title h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 0 3.5%;
+  margin: 0;
+}
+.card .card-meta {
+  max-height: 0;
+  overflow: hidden;
+  color: #666;
+  font-size: .78em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5%;
+  padding: 0 5%;
+  -moz-transition-property: max-height;
+  -o-transition-property: max-height;
+  -webkit-transition-property: max-height;
+  transition-property: max-height;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.card:hover, .card:focus {
+  background: white;
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+}
+.card:hover .card-title, .card:focus .card-title {
+  background: rgba(51, 138, 155, 0.75);
+  color: white;
+}
+.card:hover .card-meta, .card:focus .card-meta {
+  max-height: 1em;
+}
+
+.diver-name {
+  color: #338a9b;
+  font-family: 'Alegreya Sans', sans-serif;
+  line-height: 0;
+}
+
+.diver-origin {
+  color: #338a9b;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 0;
+}
+
+img {
+  max-width: 100%;
+}
+.wrapper{
+   background-color: rgba(39, 164, 197, 0.95);
+}
+body {
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+* {
+  -moz-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -moz-transform;
+  -o-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -o-transform;
+  -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/*Educational Dives*/
+.diver-title {
+  color: #fff;
+  padding: 1em 0 0 1em;
+  font-size: 3em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.container-blue {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: rgba(212, 237, 243, 0.75);
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 2vw;
+  color:#000;
+}
+
+.diver-subtitle {
+  background-color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+.row-hdr {
+  background-color: #FFFFFF;
+  max-width: 1200px;
+  font-family: 'Alegreya Sans', sans-serif;
+  line-height: 4;
+  color:#000;
+}
+
+.row {
+  background-color: #FFFFFF;
+  max-width: 1200px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.container-white {
+  display: -webkit-flex;
+  display: flex;
+  /*-webkit-flex-direction: row;
+  flex-direction: row;*/
+  background-color: #FFFFFF;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 1vw 2vw 1vw 0vw;
+  color:black;
+}
+
+.large-side {
+  -webkit-flex: 2 0 0;
+  flex: 2 0 0;
+}
+
+.small-side {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 1.5vw;
+}
+
+.img1 {
+ width: 100%;
+  height: auto;
+  padding-right: 1vw;
+ 
+  -moz-transition-property: max-height;
+  -o-transition-property: max-height;
+  -webkit-transition-property: max-height;
+  transition-property: max-height;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.img1:hover, .img1:focus {
+ opacity:.8; 
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+/*Call to Action*/
+
+.container-cta {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* wrks with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  
+  margin: 0 auto;
+  background-color: #27a4c5;
+  color: white;
+  text-align: center;
+  padding-top: 1.25em;
+  max-width: 1200px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.container-span-cta {
+  display: flex-item;
+}
+
+.cta-hdr {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 900;
+  padding-top: .15em;
+  line-height: 1;
+  padding-bottom: .25em;
+}
+
+.cta-body {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  padding-bottom: 1em;
+  padding-left: .25em;
+  padding-right: .25em;
+}
+
+.btn-booking {
+  font-size: 1em;
+  border-radius: 25px;
+  width: 15em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  margin-bottom: 1.5em;
+  background-color: #e97d35;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.footer-container{
+  background-color: #fff;
+}
+
+.logo {
+  
+    width: 20%;
+    margin: 1.25em 0 0 1.25em;
+}
